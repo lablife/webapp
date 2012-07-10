@@ -1,3 +1,7 @@
+homepage:
+    pattern:    /
+    default: { _controller: AcmeComicalBundle:Reservation:index }
+
 AcmeComicalBundle:
     resource: "@AcmeComicalBundle/Controller/"
     type:     annotation
