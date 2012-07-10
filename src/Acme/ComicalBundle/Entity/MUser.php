@@ -3,6 +3,7 @@
 namespace Acme\ComicalBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * Acme\ComicalBundle\Entity\MUser
@@ -53,6 +54,7 @@ class MUser
      * @var datetime $createdAt
      *
      * @ORM\Column(name="created_at", type="datetime", nullable=false)
+     * @Gedmo\Timestampable(on="create")
      */
     private $createdAt;
 
@@ -60,6 +62,7 @@ class MUser
      * @var datetime $updatedAt
      *
      * @ORM\Column(name="updated_at", type="datetime", nullable=false)
+     * @Gedmo\Timestampable(on="update")
      */
     private $updatedAt;
 
